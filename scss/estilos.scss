@@ -1,0 +1,315 @@
+//--Modulos de color--//
+$mainbackground: black;
+$maincolour: white;
+$maincontrast: grey;
+$contrastfont: black;
+*   {
+    margin:0;
+    box-sizing: border-box;
+    }
+//--elementos--// 
+body{ 
+    background-color: $mainbackground;
+    color: $maincolour;
+    font-family: "Lexend", sans-serif ;
+    overflow-x: auto;
+    overflow-y: auto; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    }
+
+form{
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+input,textarea{background-color: $maincontrast;}
+::placeholder{color:$contrastfont;}
+
+//--clases--//
+.header{
+    background-color:$mainbackground;
+    color: $maincolour;
+    border: 2px;
+    border-style: solid;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    }
+    
+.nav{
+    display: flex;
+    justify-content:center;
+    max-width: 992px;
+    margin: 0 auto;
+    }
+    
+.nav-link{
+    color: $maincolour;
+    text-decoration: none;
+    }
+    
+.nav-link-icons{
+    color:$maincolour;
+    text-decoration: none;
+    font-size: xx-large;
+    padding: 0 5px;
+    margin-top: 25px;
+    }
+        
+.logo_name img{
+    width: 300px;
+    height: 33px;
+    font-weight: bold;
+    padding: 0 50px;
+    margin-top: 25px;
+    line-height: 80px;
+    }
+    
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    }
+    
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 2 px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    }
+    
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+    }
+    
+.nav-menu-link:hover{
+    color: $maincontrast;
+    transition: 0.5s;
+    }
+.nav-link-icons:hover{
+    color: $maincontrast;
+    transition: 0.5s;   
+    }
+.footer a:hover{
+    background-color: $maincontrast;
+    color: $contrastfont;
+    transition: 0.5s;
+    border-radius: 3px;
+    max-width: 60px;
+    }
+    
+.nav-toggle{
+    color:$maincolour;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+    }
+    
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    }
+    
+.slide{
+    margin-top: 10%;
+    }
+
+
+.spotifyBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    }
+    
+.youtubeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    }
+    
+.youtubePlayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    }
+
+.tracklist{
+    text-decoration: none;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;
+    }
+    
+.tracklistPlayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 5%; }
+   
+.formtitle{text-align: center;}
+    
+.footer{
+    display: flex;
+    margin-top: auto;
+    min-width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none; 
+    padding: 20px;
+    }
+
+.footer a{
+    text-decoration: none;
+    color:$maincolour;
+}    
+//--animación logo footer--//
+.footer img{display: block;
+            margin-left: 90%;
+            margin-top: 90%;
+            transform: translate(-50%, -50%);
+            animation: myfirst 4s infinite linear; }
+@keyframes myfirst{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+//--media query--//   
+
+@media (max-width:668px)
+         {
+            body     {padding-top: 70px;}
+            
+            .header  {background-color: $mainbackground;
+                     height: 60px;
+                     position: fixed;
+                     width: 100%;
+                     top: 0;
+                     left:0;}
+            
+            .nav     {justify-content: center;}
+            
+            .logo img{display: block;
+                     align-items: center;
+                     justify-content: center;}
+
+      .nav-link-icons{color: $maincolour;
+                     text-decoration: none;
+                     font-size: xx-large;
+                     padding: 0 5px;}
+                
+       .logo_name img{margin-top: 10px;}
+
+            .nav-menu{flex-direction: column;
+                      align-items: center;
+                      margin-right: 0;
+                      list-style: none;
+                      background-color: rgb(49, 46, 46);
+                      position: fixed;
+                      left: 0;
+                      top: 60px;
+                      width:100%;
+                      padding: 0;
+                      overflow-y: auto;
+                      left: 100%;
+                      transition:left 0.3s;
+                     }
+             
+       .nav-menu-item{font-size: 18px;
+                      margin: 0 10px;
+                      line-height: 70px;
+                      text-transform: uppercase;
+                      width: max-content;
+                     }
+            
+       .nav-menu-link{padding: 8px 12px;
+                      border-radius: 3px;
+                     }
+            .nav-menu-link, .nav-link-icons:hover
+                     {background: none;
+                      color: darkgray;
+                      transition: 0.5s;
+                     }
+
+           
+          .nav-toggle{display: block;}
+            
+    .nav-menu_visible{left: 0;}
+            
+              .middle{flex-direction: column;
+                      margin-top: 0%;
+                      margin-left: 1.5%;
+                      width:fit-content ;
+                      align-items: center;
+                      justify-content: center;}
+        
+              .footer{display: flex;
+                      bottom: auto;
+                      justify-content: space-around;
+                      align-items:center  ;
+                      height: 100px;
+                      width: 100%;
+                      list-style: none;
+                      text-decoration: none; 
+                      margin-right: auto;
+                      margin-top: auto;}
+            
+            .footer a{text-decoration: none;
+                      color: $maincolour;}    
+            
+           .footer li{justify-content: center;}
+        
+         .tracklistPlayer, .spotifyBanner
+                     {justify-content: space-between;
+                      margin-top: 5%;
+                      flex-direction: column;
+                      margin-left: 2%;
+                     }
+         .youtubeBanner,.youtubePlayer
+                     {margin-left: 2%;}
+         .carouselContenedor
+                     {justify-content: center;}
+               .slide{display:flex;
+                      margin-top: 350px;
+                      align-items: center;
+                      justify-content: center;
+                     }
+                 form{margin-top: 10%;
+                      margin-left: 12%;
+                      width: 400px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                     }
+            #footermain{justify-content:first baseline;}
+                     
+                     }
