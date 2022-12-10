@@ -38,32 +38,93 @@ input,textarea{background-color: $maincontrast;}
     border: 2px;
     border-style: solid;
     height: 80px;
+    display: flex;
+    justify-content: center;
     position: fixed;
     width: 100%;
     top: 0;
     left:0;
-    }
-    
+     }
+
 .nav{
     display: flex;
     justify-content:center;
     max-width: 992px;
     margin: 0 auto;
-    }
-    
-.nav-link{
-    color: $maincolour;
-    text-decoration: none;
-    }
-    
-.nav-link-icons{
-    color:$maincolour;
-    text-decoration: none;
-    font-size: xx-large;
-    padding: 0 5px;
-    margin-top: 25px;
-    }
-        
+    &-link{
+        color: $maincolour;
+        text-decoration: none;
+        &-icons{
+            color:$maincolour;
+            font-size: xx-large;
+            padding: 0 5px;
+            margin-top: 25px;
+            &:hover{
+                color: $maincontrast;
+                transition: 0.5s;   
+                };
+            };
+        }
+        &-menu{
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+            &-item{
+                font-size: 18px;
+                margin: 0 2 px;
+                line-height: 80px;
+                text-transform: uppercase;
+                width: max-content;
+                };
+            &-link{
+                padding: 8px 12px;
+                border-radius: 3px;
+                &:hover{
+                    color: $maincontrast;
+                    transition: 0.5s;
+                    };
+                };
+            }
+            &-toggle{
+                color:$maincolour;
+                background: none;
+                border: none;
+                font-size: 30px;
+                padding: 0 20px;
+                line-height: 60px;
+                display: none;
+                cursor: pointer;
+                }    
+        }
+
+            
+    .footer{
+        display: flex;
+        margin-top: auto;
+        min-width: 400px;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        text-decoration: none; 
+        padding: 20px;
+        & img{display: block;
+            margin-left: 90%;
+            margin-top: 90%;
+            transform: translate(-50%, -50%);
+            animation: myfirst 4s infinite linear;};
+        & a{
+            text-decoration: none;
+            color:$maincolour;
+            &:hover{
+                background-color: $maincontrast;
+                color: $contrastfont;
+                transition: 0.5s;
+                border-radius: 3px;
+                max-width: 60px;
+                };
+           };
+        }
+
 .logo_name img{
     width: 300px;
     height: 33px;
@@ -73,57 +134,12 @@ input,textarea{background-color: $maincontrast;}
     line-height: 80px;
     }
     
-.nav-menu{
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-    }
-    
-.nav-menu-item{
-    font-size: 18px;
-    margin: 0 2 px;
-    line-height: 80px;
-    text-transform: uppercase;
-    width: max-content;
-    }
-    
-.nav-menu-link{
-    padding: 8px 12px;
-    border-radius: 3px;
-    }
-    
-.nav-menu-link:hover{
-    color: $maincontrast;
-    transition: 0.5s;
-    }
-.nav-link-icons:hover{
-    color: $maincontrast;
-    transition: 0.5s;   
-    }
-.footer a:hover{
-    background-color: $maincontrast;
-    color: $contrastfont;
-    transition: 0.5s;
-    border-radius: 3px;
-    max-width: 60px;
-    }
-    
-.nav-toggle{
-    color:$maincolour;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
-    display: none;
-    cursor: pointer;
-    }
-    
 .middle{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    size-adjust: 70%;
     }
     
 .slide{
@@ -161,40 +177,20 @@ input,textarea{background-color: $maincontrast;}
     align-items: center;
     flex-direction: column;
     margin-top: 4%;
+    &Player{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
+        margin-top: 5%; };
     }
-    
-.tracklistPlayer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 5%; }
    
 .formtitle{text-align: center;}
     
-.footer{
-    display: flex;
-    margin-top: auto;
-    min-width: 400px;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-decoration: none; 
-    padding: 20px;
-    }
-
-.footer a{
-    text-decoration: none;
-    color:$maincolour;
-}    
 //--animación logo footer--//
-.footer img{display: block;
-            margin-left: 90%;
-            margin-top: 90%;
-            transform: translate(-50%, -50%);
-            animation: myfirst 4s infinite linear; }
+
 @keyframes myfirst{
     0%{
         transform: translate(-50%, -50%) rotate(0deg);
@@ -216,44 +212,38 @@ input,textarea{background-color: $maincontrast;}
                      top: 0;
                      left:0;}
             
-            .nav     {justify-content: center;}
-            
-            .logo img{display: block;
-                     align-items: center;
-                     justify-content: center;}
+            .nav     {justify-content: center;
+                      &-link-icons{color: $maincolour;
+                       text-decoration: none;
+                       font-size: xx-large;
+                       padding: 0 5px;};
+                       &-menu{flex-direction: column;
+                        align-items: center;
+                        margin-right: 0;
+                        list-style: none;
+                        background-color: rgb(49, 46, 46);
+                        position: fixed;
+                        left: 0;
+                        top: 60px;
+                        width:100%;
+                        padding: 0;
+                        overflow-y: auto;
+                        left: 100%;
+                        transition:left 0.3s;
+                        &-item{font-size: 18px;
+                            margin: 0 10px;
+                            line-height: 70px;
+                            text-transform: uppercase;
+                            width: max-content;
+                           };
+                        &-link{padding: 8px 12px;
+                            border-radius: 3px;
+                           }
 
-      .nav-link-icons{color: $maincolour;
-                     text-decoration: none;
-                     font-size: xx-large;
-                     padding: 0 5px;}
-                
-       .logo_name img{margin-top: 10px;}
+                       }
 
-            .nav-menu{flex-direction: column;
-                      align-items: center;
-                      margin-right: 0;
-                      list-style: none;
-                      background-color: rgb(49, 46, 46);
-                      position: fixed;
-                      left: 0;
-                      top: 60px;
-                      width:100%;
-                      padding: 0;
-                      overflow-y: auto;
-                      left: 100%;
-                      transition:left 0.3s;
-                     }
-             
-       .nav-menu-item{font-size: 18px;
-                      margin: 0 10px;
-                      line-height: 70px;
-                      text-transform: uppercase;
-                      width: max-content;
-                     }
-            
-       .nav-menu-link{padding: 8px 12px;
-                      border-radius: 3px;
-                     }
+                    }
+
             .nav-menu-link, .nav-link-icons:hover
                      {background: none;
                       color: darkgray;
@@ -264,11 +254,16 @@ input,textarea{background-color: $maincontrast;}
           .nav-toggle{display: block;}
             
     .nav-menu_visible{left: 0;}
+
+             .logo img{display: block;
+                      align-items: center;
+                      justify-content: center;}
+
+             .logo_name img{margin-top: 10px;}
             
               .middle{flex-direction: column;
-                      margin-top: 0%;
-                      margin-left: 1.5%;
                       width:fit-content ;
+                      margin-left: 0%;
                       align-items: center;
                       justify-content: center;}
         
