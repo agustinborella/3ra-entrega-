@@ -263,11 +263,15 @@ input, textarea {
   .tracklistPlayer, .spotifyBanner {
     justify-content: space-between;
     margin-top: 5%;
+    align-items: center;
     flex-direction: column;
     margin-left: 2%; }
-  .youtubePlayer {
-    width: 370px; }
-    .youtubePlayer .youtubeBanner {
+  .youtubePlayer iframe {
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .youtubePlayer iframe .youtubeBanner {
       margin-left: 2%; }
   .carouselContenedor {
     display: flex;
@@ -279,4 +283,5 @@ input, textarea {
     align-items: center;
     justify-content: center; }
   #footermain {
-    justify-content: first baseline; } }
+    justify-content: first baseline;
+    margin-bottom: 7%; } }

@@ -290,14 +290,18 @@ input,textarea{background-color: $maincontrast;}
                               height: 45px;}
                       } 
                     }
-                    
+        
          .tracklistPlayer, .spotifyBanner
                      {justify-content: space-between;
                       margin-top: 5%;
+                      align-items: center;
                       flex-direction: column;
                       margin-left: 2%;
                      }
-        .youtubePlayer{width: 370px;
+        .youtubePlayer iframe{width: 370px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         .youtubeBanner{margin-left: 2%; }}
          .carouselContenedor
                      {display: flex;
@@ -310,6 +314,7 @@ input,textarea{background-color: $maincontrast;}
                       justify-content: center;
                      }
 
-            #footermain{justify-content:first baseline;}
+            #footermain{justify-content:first baseline;
+                        margin-bottom: 7%;}
                      
                      }
