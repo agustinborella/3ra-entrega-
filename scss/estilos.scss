@@ -192,6 +192,7 @@ input,textarea{background-color: $maincontrast;}
     }
    
 .formtitle{text-align: center;}
+
 //--animación logo header--//
 @-webkit-keyframes fade-in {
     0% {
@@ -209,8 +210,7 @@ input,textarea{background-color: $maincontrast;}
       opacity: 1;
     }
   }
-  
-  
+    
 
 
 //--animación logo footer--//
@@ -225,9 +225,10 @@ input,textarea{background-color: $maincontrast;}
 }
 //--media query--//   
 
-@media (max-width:668px)
+@media (max-width:600px)
          {
-            body     {padding-top: 70px;}
+            //--query elementos--// 
+            body{padding-top: 70px;}
 
             form{margin-top: 10%;
                 margin-left: 12%;
@@ -236,8 +237,8 @@ input,textarea{background-color: $maincontrast;}
                 flex-direction: column;
                 justify-content: center;
                }
-            
-            .header  {background-color: $mainbackground;
+             //--query class--// 
+            .header{background-color: $mainbackground;
                      height: 60px;
                      position: fixed;
                      width: 100%;
