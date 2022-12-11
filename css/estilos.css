@@ -191,7 +191,7 @@ input, textarea {
   form {
     margin-top: 10%;
     margin-left: 12%;
-    width: 400px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -277,11 +277,10 @@ input, textarea {
         width: 45px;
         height: 45px; }
   .tracklistPlayer, .spotifyBanner {
+    display: flex;
     justify-content: space-between;
-    margin-top: 5%;
     align-items: center;
-    flex-direction: column;
-    margin-left: 2%; }
+    flex-direction: column; }
   .youtubePlayer iframe {
     width: 370px;
     display: flex;
