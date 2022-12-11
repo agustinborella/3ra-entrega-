@@ -258,15 +258,17 @@ input, textarea {
     .footer li {
       justify-content: center; }
       .footer li img {
-        width: 60px;
-        height: 60px; }
+        width: 45px;
+        height: 45px; }
   .tracklistPlayer, .spotifyBanner {
     justify-content: space-between;
     margin-top: 5%;
     flex-direction: column;
     margin-left: 2%; }
-  .youtubeBanner, .youtubePlayer {
-    margin-left: 2%; }
+  .youtubePlayer {
+    width: 370px; }
+    .youtubePlayer .youtubeBanner {
+      margin-left: 2%; }
   .carouselContenedor {
     display: flex;
     align-items: center;

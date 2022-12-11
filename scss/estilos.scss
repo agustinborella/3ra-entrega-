@@ -297,8 +297,8 @@ input,textarea{background-color: $maincontrast;}
                       flex-direction: column;
                       margin-left: 2%;
                      }
-         .youtubeBanner,.youtubePlayer
-                     {margin-left: 2%;}
+        .youtubePlayer{width: 370px;
+        .youtubeBanner{margin-left: 2%; }}
          .carouselContenedor
                      {display: flex;
                       align-items: center;
