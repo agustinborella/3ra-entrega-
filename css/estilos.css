@@ -172,6 +172,13 @@ input, textarea {
 @media (max-width: 668px) {
   body {
     padding-top: 70px; }
+  form {
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .header {
     background-color: black;
     height: 60px;
@@ -209,14 +216,14 @@ input, textarea {
       .nav-menu-link {
         padding: 8px 12px;
         border-radius: 3px; }
+    .nav-toggle {
+      display: block; }
+    .nav-menu_visible {
+      left: 0; }
   .nav-menu-link, .nav-link-icons:hover {
     background: none;
     color: darkgray;
     transition: 0.5s; }
-  .nav-toggle {
-    display: block; }
-  .nav-menu_visible {
-    left: 0; }
   .logo img {
     display: block;
     align-items: center;
@@ -224,11 +231,16 @@ input, textarea {
   .logo_name img {
     margin-top: 10px; }
   .middle {
+    display: flex;
     flex-direction: column;
-    width: fit-content;
     margin-left: 0%;
+    margin-top: 0%;
     align-items: center;
     justify-content: center; }
+    .middle .picture {
+      width: 370px; }
+    .middle .iframe {
+      width: 370px; }
   .footer {
     display: flex;
     bottom: auto;
@@ -240,11 +252,11 @@ input, textarea {
     text-decoration: none;
     margin-right: auto;
     margin-top: auto; }
-  .footer a {
-    text-decoration: none;
-    color: white; }
-  .footer li {
-    justify-content: center; }
+    .footer a {
+      text-decoration: none;
+      color: white; }
+    .footer li {
+      justify-content: center; }
   .tracklistPlayer, .spotifyBanner {
     justify-content: space-between;
     margin-top: 5%;
@@ -253,18 +265,13 @@ input, textarea {
   .youtubeBanner, .youtubePlayer {
     margin-left: 2%; }
   .carouselContenedor {
+    display: flex;
+    align-items: center;
     justify-content: center; }
   .slide {
     display: flex;
     margin-top: 350px;
     align-items: center;
-    justify-content: center; }
-  form {
-    margin-top: 10%;
-    margin-left: 12%;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
     justify-content: center; }
   #footermain {
     justify-content: first baseline; } }
