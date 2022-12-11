@@ -285,7 +285,10 @@ input,textarea{background-color: $maincontrast;}
                       margin-top: auto;
                     & a{text-decoration: none;
                         color: $maincolour;};
-                    li{justify-content: center;} 
+                    li{justify-content: center;
+                        & img{width: 45px;
+                              height: 45px;}
+                      } 
                     }
                     
          .tracklistPlayer, .spotifyBanner

@@ -257,6 +257,9 @@ input, textarea {
       color: white; }
     .footer li {
       justify-content: center; }
+      .footer li img {
+        width: 60px;
+        height: 60px; }
   .tracklistPlayer, .spotifyBanner {
     justify-content: space-between;
     margin-top: 5%;
