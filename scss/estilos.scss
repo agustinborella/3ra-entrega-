@@ -204,6 +204,14 @@ input,textarea{background-color: $maincontrast;}
 @media (max-width:668px)
          {
             body     {padding-top: 70px;}
+
+            form{margin-top: 10%;
+                margin-left: 12%;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               }
             
             .header  {background-color: $mainbackground;
                      height: 60px;
@@ -239,9 +247,9 @@ input,textarea{background-color: $maincontrast;}
                         &-link{padding: 8px 12px;
                             border-radius: 3px;
                            }
-
-                       }
-
+                         }
+                        &-toggle{display: block;}
+                        &-menu_visible{left: 0;}
                     }
 
             .nav-menu-link, .nav-link-icons:hover
@@ -249,11 +257,6 @@ input,textarea{background-color: $maincontrast;}
                       color: darkgray;
                       transition: 0.5s;
                      }
-
-           
-          .nav-toggle{display: block;}
-            
-    .nav-menu_visible{left: 0;}
 
              .logo img{display: block;
                       align-items: center;
@@ -279,13 +282,12 @@ input,textarea{background-color: $maincontrast;}
                       list-style: none;
                       text-decoration: none; 
                       margin-right: auto;
-                      margin-top: auto;}
-            
-            .footer a{text-decoration: none;
-                      color: $maincolour;}    
-            
-           .footer li{justify-content: center;}
-        
+                      margin-top: auto;
+                    & a{text-decoration: none;
+                        color: $maincolour;};
+                    li{justify-content: center;} 
+                    }
+                    
          .tracklistPlayer, .spotifyBanner
                      {justify-content: space-between;
                       margin-top: 5%;
@@ -295,19 +297,16 @@ input,textarea{background-color: $maincontrast;}
          .youtubeBanner,.youtubePlayer
                      {margin-left: 2%;}
          .carouselContenedor
-                     {justify-content: center;}
-               .slide{display:flex;
+                     {display: flex;
+                      align-items: center;
+                      justify-content: center;}
+               
+                      .slide{display:flex;
                       margin-top: 350px;
                       align-items: center;
                       justify-content: center;
                      }
-                 form{margin-top: 10%;
-                      margin-left: 12%;
-                      width: 400px;
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: center;
-                     }
+
             #footermain{justify-content:first baseline;}
                      
                      }
