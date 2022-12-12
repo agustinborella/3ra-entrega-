@@ -194,6 +194,7 @@ input, textarea {
     width: 380px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center; }
   .header {
     background-color: black;
@@ -296,7 +297,4 @@ input, textarea {
     display: flex;
     margin-top: 350px;
     align-items: center;
-    justify-content: center; }
-  #footermain {
-    justify-content: first baseline;
-    margin-bottom: 7%; } }
+    justify-content: center; } }

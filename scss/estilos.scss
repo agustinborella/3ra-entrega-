@@ -235,6 +235,7 @@ input,textarea{background-color: $maincontrast;}
                 width: 380px;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 justify-content: center;
                }
              //--query class--// 
@@ -337,8 +338,4 @@ input,textarea{background-color: $maincontrast;}
                       align-items: center;
                       justify-content: center;
                      }
-
-            #footermain{justify-content:first baseline;
-                        margin-bottom: 7%;}
-                     
                      }
