@@ -13,9 +13,7 @@ body {
   flex-direction: column; }
 
 form {
-  margin-top: 10%;
-  margin-left: 35%;
-  width: 400px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
