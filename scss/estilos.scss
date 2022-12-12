@@ -116,12 +116,12 @@ input,textarea{background-color: $maincontrast;}
             text-decoration: none;
             color:$maincolour;
             &:hover{
-                background-color: $maincontrast;
-                color: $contrastfont;
-                transition: 0.5s;
-                border-radius: 3px;
-                max-width: 60px;
-                };
+            background-color: $maincontrast;
+            color: $contrastfont;
+            transition: 0.5s;
+            border-radius: 3px;
+            max-width: 60px;
+            };
            };
         }
 
@@ -227,7 +227,7 @@ input,textarea{background-color: $maincontrast;}
 
             form{margin: 0%;
                 margin-top: 10%;
-                width: 440px;
+                width: 420px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -326,6 +326,7 @@ input,textarea{background-color: $maincontrast;}
                 
             .carouselContenedor
                     {display: flex;
+                    width: 95%;
                     align-items: center;
                     justify-content: center;}
                

@@ -191,7 +191,7 @@ input, textarea {
   form {
     margin: 0%;
     margin-top: 10%;
-    width: 440px;
+    width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,6 +291,7 @@ input, textarea {
       margin-left: 2%; }
   .carouselContenedor {
     display: flex;
+    width: 95%;
     align-items: center;
     justify-content: center; }
   .slide {
