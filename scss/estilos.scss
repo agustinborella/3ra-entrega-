@@ -223,7 +223,7 @@ input,textarea{background-color: $maincontrast;}
 }
 //--media query--//   
 
-@media (max-width:650px)
+@media only screen and (min-width: 320px) and (max-width: 576px)
          {
             //--query elementos--// 
             body{padding-top: 70px;
@@ -305,7 +305,6 @@ input,textarea{background-color: $maincontrast;}
                     align-items:center  ;
                     height: 100px;
                     width: 100%;
-                    max-width: 380px;
                     list-style: none;
                     text-decoration: none; 
                     margin-right: auto;

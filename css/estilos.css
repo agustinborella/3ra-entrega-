@@ -186,7 +186,7 @@ input, textarea {
   100% {
     transform: translate(-50%, -50%) rotate(360deg); } }
 
-@media (max-width: 650px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
   body {
     padding-top: 70px;
     overflow-y: auto; }
@@ -268,7 +268,6 @@ input, textarea {
     align-items: center;
     height: 100px;
     width: 100%;
-    max-width: 380px;
     list-style: none;
     text-decoration: none;
     margin-right: auto;
