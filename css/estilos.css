@@ -190,7 +190,7 @@ input, textarea {
   body {
     padding-top: 70px;
     overflow-y: auto;
-    max-width: 450px; }
+    max-width: 400px; }
   form {
     margin: 0%;
     margin-top: 10%;
@@ -202,14 +202,12 @@ input, textarea {
   .header {
     background-color: black;
     height: 60px;
-    max-width: 420px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0; }
   .nav {
-    justify-content: center;
-    max-width: 380px; }
+    justify-content: center; }
     .nav-link-icons {
       color: white;
       text-decoration: none;
@@ -257,6 +255,7 @@ input, textarea {
     flex-direction: column;
     margin-left: 0%;
     margin-top: 0%;
+    max-width: 450px;
     align-items: center;
     justify-content: center; }
     .middle .picture {
