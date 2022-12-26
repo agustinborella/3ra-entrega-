@@ -33,6 +33,7 @@ input,textarea{background-color: $maincontrast;}
 ::placeholder{color:$contrastfont;}
 
 //--clases--//
+
 .header{
     background-color:$mainbackground;
     color: $maincolour;
@@ -102,6 +103,7 @@ input,textarea{background-color: $maincontrast;}
     .footer{
         display: flex;
         margin-top: auto;
+        width: 100%;
         min-width: 400px;
         justify-content: space-around;
         align-items: center;
@@ -221,10 +223,12 @@ input,textarea{background-color: $maincontrast;}
 }
 //--media query--//   
 
-@media (max-width:580px)
+@media (max-width:650px)
          {
             //--query elementos--// 
-            body{padding-top: 70px;}
+            body{padding-top: 70px;
+                overflow-y: auto;
+                max-width: 450px;}
 
             form{margin: 0%;
                 margin-top: 10%;
@@ -237,12 +241,14 @@ input,textarea{background-color: $maincontrast;}
              //--query class--// 
             .header{background-color: $mainbackground;
                     height: 60px;
+                    max-width: 420px;
                     position: fixed;
                     width: 100%;
                     top: 0;
                     left:0;}
             
             .nav{justify-content: center;
+                max-width: 380px;
                 &-link-icons{color: $maincolour;
                 text-decoration: none;
                 font-size: xx-large;
@@ -292,8 +298,8 @@ input,textarea{background-color: $maincontrast;}
                     margin-top: 0%;
                     align-items: center;
                     justify-content: center;
-                    .picture{width: 370px;}
-                    .iframe{width: 370px;}}
+                    .picture{width: 350px;}
+                    .iframe{width: 350px;}}
         
             .footer{display: flex;
                     bottom: auto;
@@ -301,6 +307,7 @@ input,textarea{background-color: $maincontrast;}
                     align-items:center  ;
                     height: 100px;
                     width: 100%;
+                    max-width: 380px;
                     list-style: none;
                     text-decoration: none; 
                     margin-right: auto;
