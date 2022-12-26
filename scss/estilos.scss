@@ -293,11 +293,11 @@ input,textarea{background-color: $maincontrast;}
                     flex-direction: column;
                     margin-left: 0%;
                     margin-top: 0%;
-                    max-width: 450px;
+                    width: auto;
                     align-items: center;
                     justify-content: center;
-                    .picture{width: 350px;}
-                    .iframe{width: 350px;}}
+                    .picture{width: 320px;}
+                    .iframe{width: 320px;}}
         
             .footer{display: flex;
                     bottom: auto;
